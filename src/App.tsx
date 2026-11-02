@@ -35,7 +35,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-neutral-950 text-neutral-100 flex flex-col font-sans-clean antialiased selection:bg-amber-400 selection:text-neutral-950">
+    <div className="min-h-screen bg-[#fbf7ef] text-[#49382b] flex flex-col font-sans-clean antialiased selection:bg-amber-200 selection:text-[#49382b]">
       {/* Top Header & Navigation */}
       <Navbar
         onOpenBooking={() => handleOpenBooking()}
