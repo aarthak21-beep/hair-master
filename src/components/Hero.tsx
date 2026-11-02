@@ -9,11 +9,11 @@ interface HeroProps {
 
 export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
   return (
-    <section className="relative overflow-hidden pt-8 pb-16 lg:py-20 border-b border-neutral-800/60">
+    <section className="relative overflow-hidden pt-6 pb-12 sm:pt-8 sm:pb-16 lg:py-20 border-b border-amber-500/10 bg-[radial-gradient(ellipse_at_top_right,_rgba(180,125,45,0.12),_transparent_55%)]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Unboxed Metadata kicker (Strict Anti-Slop Rule: No Pill Enclosures) */}
-        <div className="flex flex-wrap items-center gap-2 text-xs font-medium text-neutral-400 mb-4 tracking-wide">
+        <div className="flex flex-wrap items-center gap-x-2 gap-y-1.5 text-[10px] sm:text-xs font-medium text-neutral-400 mb-5 tracking-wide">
           <span className="flex items-center gap-1 text-amber-400">
             <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
             <span className="font-semibold text-neutral-100">{BUSINESS_INFO.googleRating}</span> Rating
@@ -30,19 +30,19 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
           
           {/* Left Column: Value Proposition & CTAs */}
-          <div className="lg:col-span-7 space-y-6">
-            <h1 className="font-serif-luxury text-3xl sm:text-5xl lg:text-5xl font-bold tracking-tight text-white leading-[1.15] text-balance">
+          <div className="lg:col-span-7 space-y-5 sm:space-y-6">
+            <div className="inline-flex items-center gap-2 text-[10px] sm:text-xs font-bold tracking-[0.22em] uppercase text-amber-400"><span className="h-px w-7 bg-amber-400"></span> The Hair Master Professional Unisex Salon</div>\n            <h1 className="font-serif-luxury text-[2rem] sm:text-5xl lg:text-5xl font-bold tracking-tight text-white leading-[1.12] text-balance">
               Precision Haircraft &amp; Restorative Therapies in Mira Road East
             </h1>
 
-            <p className="text-base sm:text-lg text-neutral-300 leading-relaxed max-w-2xl">
+            <p className="text-sm sm:text-lg text-neutral-300 leading-relaxed max-w-2xl">
               Experience personalized hairdressing, certified Brazilian Keratin smoothing,
               dimensional Balayage color, and immaculate grooming. We combine clinical hair
               care ethics with master scissor artistry for both men and women.
             </p>
 
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-3 pt-1 sm:pt-2">
               <button
                 onClick={onOpenBooking}
                 className="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-lg text-sm font-semibold tracking-wide text-neutral-950 bg-amber-400 hover:bg-amber-300 active:scale-[0.98] transition-all shadow-md"
@@ -81,7 +81,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
 
           {/* Right Column: Hero High-Fidelity Asset */}
           <div className="lg:col-span-5 relative">
-            <div className="relative rounded-2xl overflow-hidden border border-neutral-800/80 shadow-2xl bg-neutral-900 aspect-16/10 lg:aspect-4/3">
+            <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden border border-amber-500/20 shadow-[0_24px_80px_rgba(0,0,0,0.45)] bg-neutral-900 aspect-[5/4] sm:aspect-16/10 lg:aspect-4/3">
               <img
                 src={heroSalonImage}
                 alt="The Hair Master Salon Modern Interior with back-lit mirrors in Mira Road"
