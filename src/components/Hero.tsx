@@ -31,7 +31,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
           
           {/* Left Column: Value Proposition & CTAs */}
           <div className="lg:col-span-7 space-y-5 sm:space-y-6">
-            <div className="inline-flex items-center gap-2 text-[10px] sm:text-xs font-bold tracking-[0.22em] uppercase text-[#a87936]"><span className="h-px w-7 bg-[#a87936]"></span> The Hair Master Professional Unisex Salon</div>\n            <h1 className="font-serif-luxury text-[2rem] sm:text-5xl lg:text-5xl font-bold tracking-tight text-[#49382b] leading-[1.12] text-balance">
+            <div className="inline-flex items-center gap-2 text-[10px] sm:text-xs font-bold tracking-[0.22em] uppercase text-[#a87936]"><span className="h-px w-7 bg-[#a87936]"></span> The Hair Master Professional Unisex Salon</div>
+            <h1 className="font-serif-luxury text-[2rem] sm:text-5xl lg:text-5xl font-bold tracking-tight text-[#49382b] leading-[1.12] text-balance">
               Precision Haircraft &amp; Restorative Therapies in Mira Road East
             </h1>
 
