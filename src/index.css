@@ -17,7 +17,7 @@
   font-family: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
-/* Custom subtle scrollbar */
+html {\n  scroll-padding-top: 5.5rem;\n  -webkit-tap-highlight-color: transparent;\n}\n\nbody {\n  min-width: 320px;\n  overflow-x: hidden;\n}\n\nbutton, a {\n  touch-action: manipulation;\n}\n\n/* Custom subtle scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
