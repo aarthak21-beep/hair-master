@@ -1,4 +1,8 @@
 import { BusinessDetails, ServiceItem, ReviewItem, GalleryItem } from '../types';
+import heroSalonImage from '../assets/images/hero_salon_interior_1793592856324.jpg';
+import balayageImage from '../assets/images/hair_color_balayage_1793592857360.jpg';
+import hairStylingImage from '../assets/images/hair_styling_craft_1793592857314.jpg';
+import hairTreatmentImage from '../assets/images/hair_treatment_spa_1793592858043.jpg';
 
 export const BUSINESS_INFO: BusinessDetails = {
   name: 'The Hair Master Professional Unisex Salon',
@@ -252,28 +256,28 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: 'gal-interior',
     title: 'Luxury Boutique Salon Ambience',
     category: 'treatments',
-    imageUrl: '/src/assets/images/hero_salon_interior_1793592856324.jpg',
+    imageUrl: heroSalonImage,
     description: 'State-of-the-art styling stations with warm back-lit mirrors and premium hygiene setup in Mira Road.'
   },
   {
     id: 'gal-balayage',
     title: 'Dimensional Caramel Balayage',
     category: 'colouring',
-    imageUrl: '/src/assets/images/hair_color_balayage_1793592857360.jpg',
+    imageUrl: balayageImage,
     description: 'Soft dimensional highlights with seamless blending and mirror gloss finish.'
   },
   {
     id: 'gal-craft',
     title: 'Master Hair Sculpting & Cut',
     category: 'haircuts',
-    imageUrl: '/src/assets/images/hair_styling_craft_1793592857314.jpg',
+    imageUrl: hairStylingImage,
     description: 'Custom face-framing layers and healthy end restoration tailored to individual bone structure.'
   },
   {
     id: 'gal-spa',
     title: 'Restorative Hair Spa & Scalp Therapy',
     category: 'treatments',
-    imageUrl: '/src/assets/images/hair_treatment_spa_1793592858043.jpg',
+    imageUrl: hairTreatmentImage,
     description: 'Rejuvenating steam and peptide mask ritual delivering long-lasting hair resilience.'
   }
 ];
