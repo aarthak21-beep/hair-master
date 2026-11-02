@@ -1,0 +1,6 @@
+{
+  "name": "The Hair Master Professional Unisex Salon",
+  "description": "Premium unisex hair salon and grooming lounge in Mira Road East, Mumbai offering precision cuts, balayage, keratin treatments, and skin care.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
