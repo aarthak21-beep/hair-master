@@ -1,5 +1,7 @@
 import React from 'react';
 import { Sparkles, Shield, CheckCircle2, ArrowRight } from 'lucide-react';
+import hairTreatmentImage from '../assets/images/hair_treatment_spa_1793592858043.jpg';
+import balayageImage from '../assets/images/hair_color_balayage_1793592857360.jpg';
 
 interface FeaturedTreatmentsProps {
   onOpenBooking: (serviceName?: string) => void;
@@ -31,7 +33,7 @@ export const FeaturedTreatments: React.FC<FeaturedTreatmentsProps> = ({ onOpenBo
           <div className="lg:col-span-6 relative">
             <div className="rounded-2xl overflow-hidden border border-neutral-800 bg-neutral-950 aspect-4/3 shadow-xl">
               <img
-                src="/src/assets/images/hair_treatment_spa_1793592858043.jpg"
+                src={hairTreatmentImage}
                 alt="Hair Spa and Keratin Treatment in progress at The Hair Master Salon"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover"
@@ -156,7 +158,7 @@ export const FeaturedTreatments: React.FC<FeaturedTreatmentsProps> = ({ onOpenBo
           <div className="lg:col-span-6 relative order-1 lg:order-2">
             <div className="rounded-2xl overflow-hidden border border-neutral-800 bg-neutral-950 aspect-4/3 shadow-xl">
               <img
-                src="/src/assets/images/hair_color_balayage_1793592857360.jpg"
+                src={balayageImage}
                 alt="Caramel Balayage Hair Colour Transformation at The Hair Master Salon"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover"
