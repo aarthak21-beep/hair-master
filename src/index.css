@@ -6,7 +6,9 @@
 }
 
 :root {
+  color-scheme: dark;
   font-family: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #0a0a0a;
 }
 
 .font-serif-luxury {
@@ -17,7 +19,22 @@
   font-family: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
-html {\n  scroll-padding-top: 5.5rem;\n  -webkit-tap-highlight-color: transparent;\n}\n\nbody {\n  min-width: 320px;\n  overflow-x: hidden;\n}\n\nbutton, a {\n  touch-action: manipulation;\n}\n\n/* Custom subtle scrollbar */
+html {
+  scroll-padding-top: 5.5rem;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+button,
+a {
+  touch-action: manipulation;
+}
+
+/* Custom subtle scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
