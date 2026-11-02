@@ -18,12 +18,12 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
             <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
             <span className="font-semibold text-[#49382b]">{BUSINESS_INFO.googleRating}</span> Rating
           </span>
-          <span className="text-neutral-600">·</span>
+          <span className="text-[#b8a895]">·</span>
           <span>58+ Verified Client Reviews</span>
           <span className="text-neutral-600">·</span>
           <span>Poonam Sagar · Mira Road East</span>
           <span className="text-neutral-600">·</span>
-          <span className="text-amber-300">Open 7 Days (10 AM – 10 PM)</span>
+          <span className="text-[#a87936]">Open 7 Days (10 AM – 10 PM)</span>
         </div>
 
         {/* 2-Column Responsive Split Layout */}
@@ -31,7 +31,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
           
           {/* Left Column: Value Proposition & CTAs */}
           <div className="lg:col-span-7 space-y-5 sm:space-y-6">
-            <div className="inline-flex items-center gap-2 text-[10px] sm:text-xs font-bold tracking-[0.22em] uppercase text-amber-400"><span className="h-px w-7 bg-amber-400"></span> The Hair Master Professional Unisex Salon</div>\n            <h1 className="font-serif-luxury text-[2rem] sm:text-5xl lg:text-5xl font-bold tracking-tight text-white leading-[1.12] text-balance">
+            <div className="inline-flex items-center gap-2 text-[10px] sm:text-xs font-bold tracking-[0.22em] uppercase text-[#a87936]"><span className="h-px w-7 bg-[#a87936]"></span> The Hair Master Professional Unisex Salon</div>\n            <h1 className="font-serif-luxury text-[2rem] sm:text-5xl lg:text-5xl font-bold tracking-tight text-[#49382b] leading-[1.12] text-balance">
               Precision Haircraft &amp; Restorative Therapies in Mira Road East
             </h1>
 
@@ -63,7 +63,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
             </div>
 
             {/* Micro Trust Indicators */}
-            <div className="pt-4 border-t border-neutral-800/80 grid grid-cols-2 sm:grid-cols-3 gap-4 text-xs text-neutral-400">
+            <div className="pt-4 border-t border-[#e5d8c7] grid grid-cols-2 sm:grid-cols-3 gap-4 text-xs text-[#806d5c]">
               <div className="flex items-center gap-2">
                 <ShieldCheck className="w-4 h-4 text-amber-400 shrink-0" />
                 <span>100% Genuine L'Oréal &amp; Schwarzkopf</span>
@@ -94,10 +94,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
               <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-[#fffaf2]/92 backdrop-blur-md border border-[#e5d8c7] text-xs">
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="font-semibold text-neutral-100">Boutique Unisex Styling Lounge</p>
+                    <p className="font-semibold text-[#49382b]">Boutique Unisex Styling Lounge</p>
                     <p className="text-[#806d5c] text-[11px]">Poonam Estate Cluster 2 · Gaurav Galaxy</p>
                   </div>
-                  <span className="px-2 py-1 text-[11px] font-semibold text-amber-300 bg-amber-950/60 border border-amber-800/50 rounded">
+                  <span className="px-2 py-1 text-[11px] font-semibold text-[#8b642d] bg-[#f3e8d8] border border-[#e5d8c7] rounded">
                     Verified Listing
                   </span>
                 </div>
