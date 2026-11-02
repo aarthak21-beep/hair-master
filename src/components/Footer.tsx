@@ -143,9 +143,6 @@ export const Footer: React.FC<FooterProps> = ({ onOpenDossier, onOpenBooking }) 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-neutral-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-neutral-500 text-[11px]">
           <p>© {new Date().getFullYear()} The Hair Master Professional Unisex Salon. All rights reserved.</p>
-          <p>
-            Local SEO &amp; Verified Business Digital Blueprint · Mira Road East, Maharashtra 401107
-          </p>
         </div>
 
       </div>
