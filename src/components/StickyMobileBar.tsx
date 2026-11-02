@@ -8,13 +8,13 @@ interface StickyMobileBarProps {
 
 export const StickyMobileBar: React.FC<StickyMobileBarProps> = ({ onOpenBooking }) => {
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-40 md:hidden bg-neutral-950/95 backdrop-blur-md border-t border-neutral-800 p-2.5 shadow-2xl">
-      <div className="grid grid-cols-3 gap-2">
+    <div className="fixed bottom-0 left-0 right-0 z-40 md:hidden bg-neutral-950/95 backdrop-blur-xl border-t border-amber-500/20 px-3 pt-2.5 pb-[calc(0.625rem+env(safe-area-inset-bottom))] shadow-[0_-12px_40px_rgba(0,0,0,0.45)]">
+      <div className="mx-auto grid max-w-lg grid-cols-3 gap-2">
         
         {/* Call button */}
         <a
           href={`tel:${BUSINESS_INFO.phoneRaw}`}
-          className="h-11 flex items-center justify-center gap-1.5 rounded-lg bg-neutral-900 border border-neutral-700/80 text-neutral-100 text-xs font-semibold active:scale-95 transition-transform"
+          className="h-12 flex items-center justify-center gap-1.5 rounded-xl bg-neutral-900 border border-neutral-700/80 text-neutral-100 text-xs font-semibold active:scale-95 transition-transform"
         >
           <Phone className="w-4 h-4 text-amber-400" />
           <span>Call</span>

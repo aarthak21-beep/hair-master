@@ -6,7 +6,7 @@ import hairTreatmentImage from '../assets/images/hair_treatment_spa_179359285804
 
 export const BUSINESS_INFO: BusinessDetails = {
   name: 'The Hair Master Professional Unisex Salon',
-  shortName: 'The Hair Master',
+  shortName: 'The Hair Master Professional Unisex Salon',
   tagline: 'Precision Hairdressing & Restorative Hair Therapies in Mira Road',
   address: {
     line1: 'Shop No. 4, Poonam Estate Cluster 2, Gaurav Galaxy',
