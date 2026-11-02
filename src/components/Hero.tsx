@@ -1,6 +1,7 @@
 import React from 'react';
 import { Calendar, MessageSquare, Star, Sparkles, ShieldCheck } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/salonData';
+import heroSalonImage from '../assets/images/hero_salon_interior_1793592856324.jpg';
 
 interface HeroProps {
   onOpenBooking: () => void;
@@ -82,7 +83,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-2xl overflow-hidden border border-neutral-800/80 shadow-2xl bg-neutral-900 aspect-16/10 lg:aspect-4/3">
               <img
-                src="/src/assets/images/hero_salon_interior_1793592856324.jpg"
+                src={heroSalonImage}
                 alt="The Hair Master Salon Modern Interior with back-lit mirrors in Mira Road"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
