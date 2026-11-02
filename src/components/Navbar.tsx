@@ -22,7 +22,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onOpenDossier }) 
   return (
     <>
       {/* Top verified announcement bar */}
-      <div className="bg-gradient-to-r from-neutral-950 via-stone-900 to-neutral-950 border-b border-amber-500/20 text-[10px] sm:text-xs text-neutral-300 py-2 px-3">
+      <div className="bg-gradient-to-r from-[#fffaf2] via-[#f2e8da] to-[#fffaf2] border-b border-amber-700/20 text-[10px] sm:text-xs text-[#665344] py-2 px-3">
         <div className="max-w-7xl mx-auto flex items-center justify-center sm:justify-between gap-3">
           <div className="flex items-center gap-3 overflow-hidden text-ellipsis whitespace-nowrap">
             <span className="flex items-center gap-1.5 text-amber-400 font-medium shrink-0">
@@ -59,14 +59,14 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onOpenDossier }) 
       </div>
 
       {/* Main Sticky Header strictly adhering to Top Bar Contract (§2) */}
-      <header className="sticky top-0 z-40 bg-neutral-950/90 backdrop-blur-md border-b border-neutral-800/80">
+      <header className="sticky top-0 z-40 bg-[#fffaf2]/95 backdrop-blur-md border-b border-[#e5d8c7]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between gap-3 min-h-16 sm:h-20 py-2">
             
             {/* Zone 1: Single text element wordmark */}
             <a
               href="#"
-              className="font-serif-luxury text-[17px] leading-tight sm:text-2xl font-bold tracking-tight text-white hover:text-amber-200 transition-colors max-w-[235px] sm:max-w-none"
+              className="font-serif-luxury text-[17px] leading-tight sm:text-2xl font-bold tracking-tight text-[#49382b] hover:text-amber-700 transition-colors max-w-[235px] sm:max-w-none"
             >
               <span className="block">{BUSINESS_INFO.shortName}</span><span className="block mt-0.5 font-sans-clean text-[8px] sm:text-[10px] font-semibold tracking-[0.2em] text-amber-400 uppercase">Beauty • Hair • Grooming</span>
             </a>
@@ -98,7 +98,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onOpenDossier }) 
               <button
                 type="button"
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="md:hidden p-2.5 rounded-xl text-amber-300 bg-neutral-900 border border-amber-500/20 hover:text-white hover:bg-neutral-800 transition-colors focus:outline-none"
+                className="md:hidden p-2.5 rounded-xl text-amber-800 bg-[#f3e8d8] border border-amber-700/25 hover:text-amber-900 hover:bg-[#eadcc8] transition-colors focus:outline-none"
                 aria-label="Toggle navigation menu"
               >
                 {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -109,21 +109,21 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onOpenDossier }) 
 
         {/* Mobile slide-down menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden border-b border-neutral-800 bg-neutral-950 px-4 pt-3 pb-6 space-y-3">
+          <div className="md:hidden border-b border-[#e5d8c7] bg-[#fffaf2] px-4 pt-3 pb-6 space-y-3">
             <nav className="flex flex-col space-y-2">
               {navLinks.map((link) => (
                 <a
                   key={link.label}
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="px-3 py-2 text-sm font-medium text-neutral-200 hover:text-amber-400 hover:bg-neutral-900 rounded-md transition-colors"
+                  className="px-3 py-2 text-sm font-medium text-[#49382b] hover:text-amber-800 hover:bg-[#f3e8d8] rounded-md transition-colors"
                 >
                   {link.label}
                 </a>
               ))}
             </nav>
 
-            <div className="pt-3 border-t border-neutral-800 flex flex-col gap-2">
+            <div className="pt-3 border-t border-[#e5d8c7] flex flex-col gap-2">
               <button
                 onClick={() => {
                   setMobileMenuOpen(false);
@@ -139,7 +139,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onOpenDossier }) 
                   setMobileMenuOpen(false);
                   onOpenDossier();
                 }}
-                className="w-full py-2.5 px-4 rounded-lg text-xs font-medium text-neutral-300 hover:text-white bg-neutral-900 hover:bg-neutral-800 flex items-center justify-center gap-2"
+                className="w-full py-2.5 px-4 rounded-lg text-xs font-medium text-[#665344] hover:text-[#49382b] bg-[#f3e8d8] hover:bg-[#eadcc8] flex items-center justify-center gap-2"
               >
                 <FileText className="w-3.5 h-3.5 text-amber-400" />
                 Read Strategy & Audit Report
