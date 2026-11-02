@@ -1,5 +1,6 @@
 import React from 'react';
 import { Scissors, ShieldCheck, HeartHandshake, Smile } from 'lucide-react';
+import hairStylingImage from '../assets/images/hair_styling_craft_1793592857314.jpg';
 
 export const CraftSection: React.FC = () => {
   return (
@@ -11,7 +12,7 @@ export const CraftSection: React.FC = () => {
           <div className="lg:col-span-5 relative">
             <div className="rounded-2xl overflow-hidden border border-neutral-800 bg-neutral-900 aspect-4/3 shadow-xl relative group">
               <img
-                src="/src/assets/images/hair_styling_craft_1793592857314.jpg"
+                src={hairStylingImage}
                 alt="Hair stylist performing bespoke precision cutting at The Hair Master Salon"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
