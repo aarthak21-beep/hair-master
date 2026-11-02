@@ -25,12 +25,12 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onOpenDossier }) 
       <div className="bg-gradient-to-r from-[#fffaf2] via-[#f2e8da] to-[#fffaf2] border-b border-amber-700/20 text-[10px] sm:text-xs text-[#665344] py-2 px-3">
         <div className="max-w-7xl mx-auto flex items-center justify-center sm:justify-between gap-3">
           <div className="flex items-center gap-3 overflow-hidden text-ellipsis whitespace-nowrap">
-            <span className="flex items-center gap-1.5 text-amber-400 font-medium shrink-0">
+            <span className="flex items-center gap-1.5 text-[#a87936] font-medium shrink-0">
               <span className="w-1.5 h-1.5 rounded-full bg-amber-400 inline-block"></span>
               Open Today 10:00 AM – 10:00 PM
             </span>
-            <span className="hidden sm:inline text-neutral-500">·</span>
-            <span className="hidden sm:flex items-center gap-1 text-neutral-400 shrink-0">
+            <span className="hidden sm:inline text-[#b8a895]">·</span>
+            <span className="hidden sm:flex items-center gap-1 text-[#806d5c] shrink-0">
               <MapPin className="w-3 h-3 text-neutral-400" />
               Poonam Sagar, Mira Road East
             </span>
@@ -39,19 +39,19 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onOpenDossier }) 
           <div className="hidden sm:flex items-center gap-4 shrink-0">
             <button
               onClick={onOpenDossier}
-              className="flex items-center gap-1.5 text-amber-300 hover:text-amber-200 text-xs font-medium transition-colors"
+              className="flex items-center gap-1.5 text-[#8b642d] hover:text-[#49382b] text-xs font-medium transition-colors"
               title="View full 16-Part Research & Strategy Dossier"
             >
               <FileText className="w-3.5 h-3.5" />
               <span className="hidden md:inline">Research & Strategy Report</span>
               <span className="md:hidden">Audit Report</span>
             </button>
-            <span className="text-neutral-700">|</span>
+            <span className="text-[#b8a895]">|</span>
             <a
               href={`tel:${BUSINESS_INFO.phoneRaw}`}
-              className="flex items-center gap-1.5 text-neutral-200 hover:text-white font-medium"
+              className="flex items-center gap-1.5 text-[#49382b] hover:text-[#8b642d] font-medium"
             >
-              <Phone className="w-3 h-3 text-amber-400" />
+              <Phone className="w-3 h-3 text-[#a87936]" />
               <span>{BUSINESS_INFO.phone}</span>
             </a>
           </div>
@@ -72,12 +72,12 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onOpenDossier }) 
             </a>
 
             {/* Zone 2: Clean single-line text navigation links */}
-            <nav className="hidden md:flex items-center gap-7 text-sm font-medium text-neutral-300">
+            <nav className="hidden md:flex items-center gap-7 text-sm font-medium text-[#665344]">
               {navLinks.map((link) => (
                 <a
                   key={link.label}
                   href={link.href}
-                  className="hover:text-amber-400 transition-colors whitespace-nowrap shrink-0"
+                  className="hover:text-[#a87936] transition-colors whitespace-nowrap shrink-0"
                 >
                   {link.label}
                 </a>
@@ -88,7 +88,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onOpenDossier }) 
             <div className="flex items-center gap-3 shrink-0">
               <button
                 onClick={() => onOpenBooking()}
-                className="hidden sm:inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg text-xs font-semibold uppercase tracking-wider text-neutral-950 bg-amber-400 hover:bg-amber-300 active:scale-[0.98] transition-all whitespace-nowrap shrink-0 shadow-sm"
+                className="hidden sm:inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg text-xs font-semibold uppercase tracking-wider text-[#fffaf2] bg-[#8b642d] hover:bg-[#745124] active:scale-[0.98] transition-all whitespace-nowrap shrink-0 shadow-sm"
               >
                 <Calendar className="w-3.5 h-3.5" />
                 Book Appointment
