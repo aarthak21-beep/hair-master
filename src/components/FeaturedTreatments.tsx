@@ -9,18 +9,18 @@ interface FeaturedTreatmentsProps {
 
 export const FeaturedTreatments: React.FC<FeaturedTreatmentsProps> = ({ onOpenBooking }) => {
   return (
-    <section id="treatments" className="py-20 border-b border-neutral-800/80 bg-neutral-900/40">
+    <section id="treatments" className="py-20 border-b border-[#e5d8c7] bg-[#fffaf2]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
         
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto space-y-3">
-          <p className="text-xs font-semibold text-amber-400 uppercase tracking-widest">
+          <p className="text-xs font-semibold text-[#a87936] uppercase tracking-widest">
             Clinical Hair Health &amp; Transformation
           </p>
-          <h2 className="font-serif-luxury text-3xl sm:text-4xl font-bold text-white tracking-tight">
+          <h2 className="font-serif-luxury text-3xl sm:text-4xl font-bold text-[#49382b] tracking-tight">
             Signature Hair Restorations &amp; Color Artistry
           </h2>
-          <p className="text-sm sm:text-base text-neutral-400">
+          <p className="text-sm sm:text-base text-[#806d5c]">
             Formulated to defeat humidity, repair chemically sensitized hair fibers, and deliver
             luminous reflection with long-lasting integrity.
           </p>
@@ -31,7 +31,7 @@ export const FeaturedTreatments: React.FC<FeaturedTreatmentsProps> = ({ onOpenBo
           
           {/* Visual Left */}
           <div className="lg:col-span-6 relative">
-            <div className="rounded-2xl overflow-hidden border border-neutral-800 bg-neutral-950 aspect-4/3 shadow-xl">
+            <div className="rounded-2xl overflow-hidden border border-[#e5d8c7] bg-[#f3e8d8] aspect-4/3 shadow-xl">
               <img
                 src={hairTreatmentImage}
                 alt="Hair Spa and Keratin Treatment in progress at The Hair Master Salon"
@@ -48,11 +48,11 @@ export const FeaturedTreatments: React.FC<FeaturedTreatmentsProps> = ({ onOpenBo
               <span>RESTORATIVE SMOOTHING</span>
             </div>
 
-            <h3 className="font-serif-luxury text-2xl sm:text-3xl font-bold text-white leading-tight">
+            <h3 className="font-serif-luxury text-2xl sm:text-3xl font-bold text-[#49382b] leading-tight">
               Brazilian Keratin &amp; Deep Hair Botox Therapy
             </h3>
 
-            <p className="text-sm text-neutral-300 leading-relaxed">
+            <p className="text-sm text-[#665344] leading-relaxed">
               Mumbai's coastal weather often causes severe frizz, cuticle expansion, and dullness.
               Our Brazilian Keratin and Botox protocols infuse concentrated nano-proteins, amino acids,
               and nourishing caviar oils deep into the hair cortex.
@@ -62,7 +62,7 @@ export const FeaturedTreatments: React.FC<FeaturedTreatmentsProps> = ({ onOpenBo
               <div className="flex items-start gap-3">
                 <CheckCircle2 className="w-4 h-4 text-amber-400 mt-1 shrink-0" />
                 <div>
-                  <h4 className="text-sm font-semibold text-white">Eliminates 95% of Frizz</h4>
+                  <h4 className="text-sm font-semibold text-[#49382b]">Eliminates 95% of Frizz</h4>
                   <p className="text-xs text-neutral-400">Hair dries silky and manageable in half the daily styling time.</p>
                 </div>
               </div>
